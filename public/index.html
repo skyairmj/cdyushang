@@ -170,17 +170,6 @@
 
     </style>
     <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
     </script>
   </head>
   <body>
@@ -233,7 +222,11 @@
         </div>
       </div>
 
-      <div id="footer">&nbsp;</div>
+      <div id="footer">
+      	<p>
+      		<span />
+      	</p>
+      </div>
     </div>
   </body>
 </html>
