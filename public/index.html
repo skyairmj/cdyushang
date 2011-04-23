@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails: Welcome aboard</title>
+    <title>成都浴尚科技有限公司欢迎广大加盟商</title>
+	<meta http-equiv="Content-Type" content="text /html; charset=UTF-8" />
     <style type="text/css" media="screen">
       body {
         margin: 0;
@@ -11,222 +12,230 @@
         font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
         font-size: 13px;
         color: #333;
+		width: 977px;
+		height: 799px;
+      }
+	
+	  div.clear {
+		clear: both;
       }
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+	  #quicklink {
+		height: 40px;
+	  }
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+	  ul {
+		list-style: none;
+		float: right;
+	  }
+      
+	  ul li {
+		float: left;
+	  }
+	
+	  #quicklink ul li {
+	  }
 
+      #header {
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
       }
+	  
+	  #header #menubar {
+		height: 72px;
+		background-color: #aaa393;
+	  }
+	
+	  #header #menu {
+		height: 66px;
+		position: relative;
+		top: 6px;
+		width: auto;
+		background-color: black;
+	  }
+	
+	  #header #menu ul {
+		width: 500px;
+		position: relative;
+		top: 10px;
+		color: white;
+	  }
+	
+	  #header #menu ul li {
+		width: 14%;
+	  }
+	
+	  #advertisement {
+		width: 100%;
+		height: 108px;
+		background-color: #2d808c;
+	  }
 
       #content {
-        float: left;
+        float: right;
         background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
+        width: 555px;
       }
 
+	  #content div.legend-title {
+		float: left;
+	  }
+	
+	  #content div.legend-more {
+		float: right;
+	  }
+
+	  #content #news {
+		height: 260px;
+	  }
+
+	  #content #product {
+		height: 275px;
+	  }
+	
+	  #content #product #product-gallery {
+		height: 200px;
+   	  }
+	
       #sidebar {
-        float: right;
-        width: 175px;
+		position: absolute;
+		top: 100px;
+		left: 25px;
+        width: 397px;
+      }
+
+	  #sidebar #hot-news {
+		height: 310px;
+		background-color: #f1ea96;
+      }
+
+	  #sidebar #marketing {
+		height: 204px;
+		background-color: #edebe3;
+ 	  }
+
+	  #sidebar #franchise {
+		height: 186px;
+		position: relative;
+		top: -15px;
+	    background-color: #b6b29a;	
       }
 
       #footer {
-        clear: both;
+		position: relative;
+		left: 422px;
+		width: 555px;
+		border-top: 1px solid;
       }
-
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("images/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
     </style>
     <script type="text/javascript">
     </script>
   </head>
   <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://stdlib.rubyonrails.org/">Ruby standard library</a></li>
-              <li><a href="http://corelib.rubyonrails.org/">Ruby core</a></li>
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+	<div id="quicklink">
+		<ul>
+			<li>首页</li>
+			<li>联系</li>
+			<li>网站地图</li>
+		</ul>
+		<span id="lang"/>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div id="header">
+		<div id="menubar">
+			<div id="menu">
+				<ul>
+					<li>首页</li>
+					<li>公司</li>
+					<li>产品</li>
+					<li>招商</li>
+					<li>办事处</li>
+					<li>养生</li>
+					<li>下载</li>
+				<ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div id="advertisement">
+		
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div id="content">
+		<div id="news">
+			<div id="news-legend">
+				<div class="legend-title">最新动态</div>
+				<div class="legend-more">more</div>
+			</div>
+			<div class="clear"></div>
+			<div id="latest">
+				<h4>浴尚第三代产品销量超千万</h4>
+				<div>2011年5月1日，浴尚载程度推出第三代浴足产品。自推出伊始，市场反应热烈。上市一周，全国各地订单即超千万⋯⋯</div>
+			</div>
+			<hr>
+			<div id="past">
+				<ul>
+					<li>浴尚成功研制第三代浴足产品</li>
+					<li>浴尚获国际著名风投三千万</li>
+				</ul>
+			</div>
+		</div>
+		<div id="hottest-product">
+		
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div id="product">
+			<div id="news-legend">
+				<div class="legend-title">热门产品</div>
+				<div class="legend-more">more</div>
+			</div>
+			<div class="clear"></div>
+			<div id="product-gallery">
+			</div>	
+		</div>
+	</div>
+	
+	<div id="sidebar">
+		<div id="hot-news">
+			
+		</div>
+		<div id="marketing">
+			<div id="agent-distribution">
+				
+			</div>
+			<div id="contact">
+				
+			</div>
+		</div>
+		<div id="franchise">
+			<h3>加盟条件</h3>
+			<ol>
+				<li>加盟区域：全国各地</li>
+				<li>素质：加盟商需具备良好的商业道德即经营素质</li>
+				<li>店铺：载专业市场，专营地设立一定的浴尚专卖店</li>
+				<li>加盟保障：
+					<ol>
+						<li>公司产品拥有专业的研发机构，专职的亚法人员，县级的生产工艺与优质的原材料，所有的代理商均享受全国同意的价格</li>
+						<li>浴尚品牌加盟商载履行合同约定条件下，公司载合同约定区域内，绝不设立性质相同的区域代理</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+	</div>
 
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove or rename this file</h2>
-              <p>Routes are set up in config/routes.rb.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:migrate</code> to create your database. If you're not using SQLite (the default), edit <code>config/database.yml</code> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">
-      	<p>
-      		<span />
-      	</p>
-      </div>
+	<div class="clear"></div>
+	
+    <div id="footer">
+   		<span />
+		四川成都科技园天府路 1234-56号 TEL:(028)1234-5678 ｜ FAX:(028)1234-5678<br/>
+		版权所有 &copy; 四川浴尚科技有限公司 网络工作室 提供技术支持
     </div>
   </body>
 </html>
