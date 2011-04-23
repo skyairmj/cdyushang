@@ -8,7 +8,7 @@
         margin: 0;
         margin-bottom: 25px;
         padding: 0;
-        background-color: #f0f0f0;
+        background-color: #f7f6f4;
         font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
         font-size: 13px;
         color: #333;
@@ -20,8 +20,34 @@
 		clear: both;
       }
 
+	  #logo {
+		position: absolute;
+		top: 0;
+		left: 78px;
+		background-color: #edebe3;
+		z-index: 10;
+		width: 288px;
+		height: 100px;
+	  }
+
 	  #quicklink {
 		height: 40px;
+		background-color: #edebe3;
+	  }
+	
+	  #quicklink #lang {
+		float: right;
+		position: relative;
+		right: -140px;
+		top: 15px;
+		width:57px;
+        height:13px;
+		font-size:10px;
+		text-align:center;
+        background-color:#00759f;
+        -moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+        border-radius: 4px;
 	  }
 
 	  ul {
@@ -33,9 +59,11 @@
 		float: left;
 	  }
 	
-	  #quicklink ul li {
+	  #quicklink #quicklinks ul {
+		position: relative;
+		right: 100px;
 	  }
-
+	
       #header {
 
       }
@@ -67,14 +95,28 @@
 	  #advertisement {
 		width: 100%;
 		height: 108px;
-		background-color: #2d808c;
+		background: url('images/ad1.jpg') no-repeat #2d808c;
 	  }
 
       #content {
         float: right;
-        background-color: white;
-        width: 555px;
+        width: 507px;
+		padding: 0 28px 0 20px;
       }
+
+	  div.legend {
+		vertical-align: text-bottom;
+	  }
+	
+	  div.legend-title {
+		font-size: 14px;
+		font-weight: bold;
+	  }
+	
+	  div.legend-more {
+		font-size: 10px;
+		vertical-align: baseline;
+	  }
 
 	  #content div.legend-title {
 		float: left;
@@ -85,15 +127,31 @@
 	  }
 
 	  #content #news {
+		float: left;
+		width: 355px;
+		height: 240px;
+		padding: 20px 0 0 0;
+	  }
+	
+	  #content #news #latest {
+		padding: 20px 0 0 0;
+	  }
+	
+	  #content #hottest-product {
+		float: right;
+		width: 135px;
 		height: 260px;
+		background: url('images/ad2.jpg') no-repeat;
 	  }
 
 	  #content #product {
-		height: 275px;
+		height: 272px;
 	  }
 	
 	  #content #product #product-gallery {
 		height: 200px;
+		margin: 30px 0 0 10px;
+		background: url('images/ad6.jpg') no-repeat;
    	  }
 	
       #sidebar {
@@ -105,18 +163,34 @@
 
 	  #sidebar #hot-news {
 		height: 310px;
-		background-color: #f1ea96;
+		background-color: #FFFFFF;
+        -moz-border-radius: 13px;
+		-webkit-border-radius: 13px;
+        border-radius: 13px;
       }
 
+	  #sidebar #hot-news #hot-news-gallery {	
+		position: relative;
+		top: 10px;
+		left: 10px;
+		width: 376px;
+		height: 290px;
+		background: url('images/ad3.jpg') no-repeat;
+	  }
+
 	  #sidebar #marketing {
+		position: relative;
+		left: 19px;
+		width: 357px;
 		height: 204px;
 		background-color: #edebe3;
  	  }
 
 	  #sidebar #franchise {
-		height: 186px;
 		position: relative;
-		top: -15px;
+		left: 19px;
+		width: 357px;
+		height: 186px;
 	    background-color: #b6b29a;	
       }
 
@@ -124,20 +198,29 @@
 		position: relative;
 		left: 422px;
 		width: 555px;
-		border-top: 1px solid;
+		padding: 0 0 0 20px;
+		font-size:11px;
       }
     </style>
     <script type="text/javascript">
     </script>
   </head>
   <body>
+	<div id="logo">
+		
+	</div>
+	
 	<div id="quicklink">
-		<ul>
-			<li>首页</li>
-			<li>联系</li>
-			<li>网站地图</li>
-		</ul>
-		<span id="lang"/>
+		<div id="quicklinks">
+			<ul>
+				<li>首页&nbsp;|</li>
+				<li>&nbsp;联系&nbsp;|</li>
+				<li>&nbsp;网站地图</li>
+			</ul>			
+		</div>
+		<div id="lang">
+			English
+		</div>
 	</div>
 	
 	<div class="clear"></div>
@@ -168,43 +251,52 @@
 	
 	<div id="content">
 		<div id="news">
-			<div id="news-legend">
+			<div id="news-legend" class="legend">
 				<div class="legend-title">最新动态</div>
-				<div class="legend-more">more</div>
+				<div class="legend-more">更多⋯</div>
 			</div>
 			<div class="clear"></div>
 			<div id="latest">
-				<h4>浴尚第三代产品销量超千万</h4>
-				<div>2011年5月1日，浴尚载程度推出第三代浴足产品。自推出伊始，市场反应热烈。上市一周，全国各地订单即超千万⋯⋯</div>
+				<div style="float:left;"><img src="images/ad5.jpg"/></div>
+				<div style="float:right;width:245px;">
+					<div style="font-weight:bold">浴尚第三代产品销量超千万</div>
+					<div>2011年5月1日，浴尚载程度推出第三代浴足产品。自推出伊始，市场反应热烈。上市一周，全国各地订单即超千万⋯⋯</div>
+				</div>
 			</div>
-			<hr>
+			<div class="clear"></div>
+			<hr style="height: 0; border-style: dotted ; border-width: 1px 0 0 0;">
 			<div id="past">
 				<ul>
 					<li>浴尚成功研制第三代浴足产品</li>
-					<li>浴尚获国际著名风投三千万</li>
+					<li>浴尚成功研制第三代浴足产品</li>
+					<li>浴尚成功研制第三代浴足产品</li>
 				</ul>
 			</div>
 		</div>
 		<div id="hottest-product">
-		
+			
 		</div>
 		
 		<div class="clear"></div>
 		
 		<div id="product">
-			<div id="news-legend">
+			<div id="news-legend" class="legend">
 				<div class="legend-title">热门产品</div>
-				<div class="legend-more">more</div>
+				<div class="legend-more">更多⋯</div>
 			</div>
 			<div class="clear"></div>
 			<div id="product-gallery">
 			</div>	
 		</div>
+		
+		<hr/>
 	</div>
 	
 	<div id="sidebar">
 		<div id="hot-news">
-			
+			<div id="hot-news-gallery">
+				
+			</div>
 		</div>
 		<div id="marketing">
 			<div id="agent-distribution">
@@ -215,7 +307,7 @@
 			</div>
 		</div>
 		<div id="franchise">
-			<h3>加盟条件</h3>
+			<div class="legend-title">加盟条件</div>
 			<ol>
 				<li>加盟区域：全国各地</li>
 				<li>素质：加盟商需具备良好的商业道德即经营素质</li>
